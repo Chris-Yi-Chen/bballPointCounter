@@ -6,9 +6,27 @@
         <div class = "container">
             <h1>Points Scored</h1>
             <h2 id="count-el">0</h2>
-            <button id="increment-btn" onclick="increment()">INCREMENT</button>
-            <button id="save-btn" onclick="save()">SAVE</button>
+            <div>
+                <input id="name-input" type="text" placeholder="Name">
+            </div>
+            <div>
+                <button id="increment-btn" onclick="increment()">INCREMENT</button>
+                <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+            </div>
+            <div>
+                <button id="save-btn" onclick="save()">SAVE</button>
+                <button id="reset-btn" onclick="reset()">RESET</button>
+            </div>
             <p id="save-el">Previous entries: </p>
+            <div id="table-container">
+                <table id="data-table" border="1">
+                    <thead>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
         <script src="./main.js" type="module"></script>
 
